@@ -1,5 +1,7 @@
 # preact-views
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/developit/preact-views.svg)](https://greenkeeper.io/)
+
 [![NPM](http://img.shields.io/npm/v/preact-views.svg)](https://www.npmjs.com/package/preact-views)
 [![travis-ci](https://travis-ci.org/developit/preact-views.svg)](https://travis-ci.org/developit/preact-views)
 
