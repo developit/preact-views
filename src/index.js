@@ -1,4 +1,4 @@
-import { h, cloneElement, Component } from 'preact';
+import { h, cloneElement, Component, toChildArray } from 'preact';
 
 /** @example
  *	<Views view="home">
@@ -32,7 +32,7 @@ export class Views extends Component {
 
 	// Render the child whose `name` prop matches the current view
 	render({ children }, { view, params }) {
-		let child = children.filter( child => child.attributes.name===view )[0];
+		let child = toChildArray(children).filter( child => child.props.name===view )[0];
 		return child ? cloneElement(child, params) : null;
 	}
 }
